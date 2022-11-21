@@ -82,7 +82,7 @@ class Plant(db.Model):
 
 class PlantSchema(ma.Schema):
     class Meta:
-        fields = ['id', 'name','description', 'price', 'camera_quality', 'flight_time', 'max_speed', 'dimensions', 'weight', 'cost_of_production', 'series']
+        fields = ['id', 'name','species', 'description', 'typical_climate', 'known_uses', 'years_grown']
         # ^^( how we wil be able to pull (edit) specific information about a drone)
 
 plant_schema = PlantSchema()
